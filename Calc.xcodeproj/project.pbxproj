@@ -13,6 +13,8 @@
 		5E0C934D1EAEDB250045FCB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E0C934C1EAEDB250045FCB7 /* Assets.xcassets */; };
 		5E0C93501EAEDB250045FCB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E0C934E1EAEDB250045FCB7 /* LaunchScreen.storyboard */; };
 		5E5A52B21EB00D420027C5A6 /* CalcPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A52B11EB00D420027C5A6 /* CalcPageViewController.swift */; };
+		5EC320351EB1882100B8F0A2 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320341EB1882100B8F0A2 /* BasicViewController.swift */; };
+		5EC320371EB1888500B8F0A2 /* ExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		5E0C934F1EAEDB250045FCB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E0C93511EAEDB250045FCB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5E5A52B11EB00D420027C5A6 /* CalcPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcPageViewController.swift; sourceTree = "<group>"; };
+		5EC320341EB1882100B8F0A2 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
+		5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				5E0C934C1EAEDB250045FCB7 /* Assets.xcassets */,
 				5E0C934E1EAEDB250045FCB7 /* LaunchScreen.storyboard */,
 				5E0C93511EAEDB250045FCB7 /* Info.plist */,
+				5EC320341EB1882100B8F0A2 /* BasicViewController.swift */,
+				5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */,
 			);
 			path = Calc;
 			sourceTree = "<group>";
@@ -141,7 +147,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E5A52B21EB00D420027C5A6 /* CalcPageViewController.swift in Sources */,
+				5EC320351EB1882100B8F0A2 /* BasicViewController.swift in Sources */,
 				5E0C93481EAEDB250045FCB7 /* CalcViewController.swift in Sources */,
+				5EC320371EB1888500B8F0A2 /* ExtraViewController.swift in Sources */,
 				5E0C93461EAEDB250045FCB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
