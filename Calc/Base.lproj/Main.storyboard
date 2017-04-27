@@ -203,9 +203,12 @@
                                     <action selector="factorial:" destination="dfh-4X-hPD" eventType="touchUpInside" id="ZXf-HL-9an"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG1-L2-17U">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iG1-L2-17U" userLabel="tan">
                                 <rect key="frame" x="174.66666666666663" y="146" width="65.333333333333343" height="110"/>
                                 <state key="normal" image="Triangle"/>
+                                <connections>
+                                    <action selector="tan:" destination="dfh-4X-hPD" eventType="touchUpInside" id="UW5-bK-pTH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMD-MB-3CJ" userLabel="sqrt">
                                 <rect key="frame" x="247.99999999999997" y="146" width="65.333333333333286" height="110"/>
@@ -284,13 +287,19 @@
                                     <action selector="piButton:" destination="dfh-4X-hPD" eventType="touchUpInside" id="MaF-1u-PGW"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvk-fo-dLg">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvk-fo-dLg" userLabel="sin">
                                 <rect key="frame" x="28" y="146" width="65.333333333333329" height="110"/>
                                 <state key="normal" image="Triangle 3"/>
+                                <connections>
+                                    <action selector="sin:" destination="dfh-4X-hPD" eventType="touchUpInside" id="LRE-JF-8X1"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55m-li-ts3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="55m-li-ts3" userLabel="cos">
                                 <rect key="frame" x="101.33333333333334" y="146" width="65.333333333333343" height="110"/>
                                 <state key="normal" image="Triangle 2"/>
+                                <connections>
+                                    <action selector="cos:" destination="dfh-4X-hPD" eventType="touchUpInside" id="cp7-jx-GWN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cr3-bl-U0L" userLabel="num1">
                                 <rect key="frame" x="28" y="264" width="65.333333333333329" height="110"/>

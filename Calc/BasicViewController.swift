@@ -15,6 +15,20 @@ class BasicViewController: UIViewController {
     }
     @IBAction func enter(_ sender: UIButton) {
     }
+    @IBAction func multiply(_ sender: UIButton) {
+    }
+    @IBAction func divide(_ sender: UIButton) {
+    }
+    @IBAction func plus(_ sender: UIButton) {
+    }
+    @IBAction func minus(_ sender: UIButton) {
+    }
+    @IBAction func sin(_ sender: UIButton) {
+    }
+    @IBAction func cos(_ sender: UIButton) {
+    }
+    @IBAction func tan(_ sender: UIButton) {
+    }
     @IBAction func modulo(_ sender: UIButton) {
     }
     @IBAction func factorial(_ sender: UIButton) {
@@ -28,14 +42,6 @@ class BasicViewController: UIViewController {
     @IBAction func closeParen(_ sender: UIButton) {
     }
     @IBAction func dot(_ sender: UIButton) {
-    }
-    @IBAction func multiply(_ sender: UIButton) {
-    }
-    @IBAction func divide(_ sender: UIButton) {
-    }
-    @IBAction func plus(_ sender: UIButton) {
-    }
-    @IBAction func minus(_ sender: UIButton) {
     }
     @IBAction func x(_ sender: UIButton) {
     }
