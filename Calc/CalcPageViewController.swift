@@ -6,7 +6,7 @@ import UIKit
 
 class CalcPageViewController: UIPageViewController {
     
-    weak var calcDelegate: CalcPageViewControllerDelegate?
+    weak var CalcPageDelegate: CalcPageViewControllerDelegate?
     
     fileprivate(set) lazy var orderedViewControllers: [UIViewController] = {
         return [
@@ -24,7 +24,7 @@ class CalcPageViewController: UIPageViewController {
             scrollToViewController(initialViewController)
         }
         
-        calcDelegate?.calcPageViewController(self,
+        CalcPageDelegate?.calcPageViewController(self,
             didUpdatePageCount: orderedViewControllers.count)
     }
     
@@ -63,7 +63,7 @@ class CalcPageViewController: UIPageViewController {
     fileprivate func notifyCalcDelegateOfNewIndex() {
         if let firstViewController = viewControllers?.first,
             let index = orderedViewControllers.index(of: firstViewController) {
-                calcDelegate?.calcPageViewController(self,
+                CalcPageDelegate?.calcPageViewController(self,
                     didUpdatePageIndex: index)
         }
     }

@@ -59,7 +59,7 @@
                                                     <constraint firstItem="8cP-hO-DUd" firstAttribute="top" secondItem="nBC-Be-xBh" secondAttribute="top" constant="8" id="wz0-Sm-oN7"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-xn-zZX">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gdi-xn-zZX">
                                                 <rect key="frame" x="0.0" y="50" width="358" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="√(3π/2)*sin(5)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="84J-Eb-gjC">
@@ -90,7 +90,7 @@
                                                     <constraint firstItem="S7s-Fd-32b" firstAttribute="top" secondItem="Gdi-xn-zZX" secondAttribute="top" constant="8" id="pdx-A3-IdC"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ig-dR-eJ0">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6ig-dR-eJ0">
                                                 <rect key="frame" x="0.0" y="100" width="358" height="50"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(-5+√(5^2-4*3*2))/(2*3)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3q-Hk-ON4">
@@ -162,6 +162,8 @@
                     <connections>
                         <outlet property="calculationsView" destination="oK2-6h-eCX" id="4Re-uP-vYd"/>
                         <outlet property="containerView" destination="euY-35-45M" id="1yk-Aa-KsR"/>
+                        <outlet property="evaluatedTerm" destination="8cP-hO-DUd" id="nNh-9c-GwH"/>
+                        <outlet property="expression" destination="gsR-Pw-QEt" id="uRJ-oX-Jne"/>
                         <outlet property="pageControl" destination="bih-af-4BX" id="T6D-gm-5E4"/>
                     </connections>
                 </viewController>
@@ -189,11 +191,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-96-Rie" userLabel="euler">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S3T-96-Rie" userLabel="numEuler">
                                 <rect key="frame" x="174.66666666666666" y="28" width="64.666666666666686" height="110"/>
                                 <state key="normal" image="e"/>
                                 <connections>
-                                    <action selector="euler:" destination="dfh-4X-hPD" eventType="touchUpInside" id="d6G-EN-ZsF"/>
+                                    <action selector="numEuler:" destination="dfh-4X-hPD" eventType="touchUpInside" id="rg0-yV-Ryp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9jS-P6-fJl" userLabel="factorial">
@@ -280,11 +282,11 @@
                                     <action selector="modulo:" destination="dfh-4X-hPD" eventType="touchUpInside" id="0EW-LB-0K1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM9-Hp-1f7" userLabel="piButton">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DM9-Hp-1f7" userLabel="numPi">
                                 <rect key="frame" x="101.33333333333334" y="28" width="65.333333333333343" height="110"/>
                                 <state key="normal" image="π"/>
                                 <connections>
-                                    <action selector="piButton:" destination="dfh-4X-hPD" eventType="touchUpInside" id="MaF-1u-PGW"/>
+                                    <action selector="numPi:" destination="dfh-4X-hPD" eventType="touchUpInside" id="qO6-bM-Kiq"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nvk-fo-dLg" userLabel="sin">

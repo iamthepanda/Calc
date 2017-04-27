@@ -12,20 +12,23 @@ class CalcViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var calculationsView: UIStackView!
-    
+    @IBOutlet weak var expression: UILabel!
+    @IBOutlet weak var evaluatedTerm: UILabel!
     
     let calc = Calc.calc
     
     var calcPageViewController: CalcPageViewController? {
         didSet {
-            calcPageViewController?.calcDelegate = self
+            calcPageViewController?.CalcPageDelegate = self
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        calc.delegate = self
         pageControl.addTarget(self, action: #selector(CalcViewController.didChangePageControlValue), for: .valueChanged)
+        
+        expression.text = "0"
         
     }
     
@@ -64,3 +67,14 @@ extension CalcViewController: CalcPageViewControllerDelegate {
 
 }
 
+extension CalcViewController: CalcDelegate {
+    
+    func updateExpression() {
+        expression.text = calc.buffer
+    }
+    
+    func updateResult() {
+        evaluatedTerm.text = calc.buffer
+    }
+    
+}
