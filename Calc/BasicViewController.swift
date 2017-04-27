@@ -18,7 +18,7 @@ class BasicViewController: UIViewController {
         calc.deleteLastToken()
     }
     @IBAction func enter(_ sender: UIButton) {
-        calc.clearBuffer()
+        calc.next()
     }
     @IBAction func multiply(_ sender: UIButton) {
         calc.addToBuffer("*")

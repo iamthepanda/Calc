@@ -11,6 +11,7 @@ import Foundation
 protocol CalcDelegate {
     func updateExpression()
     func updateResult()
+    func next()
 }
 
 class Calc {
@@ -19,7 +20,7 @@ class Calc {
     var buffer: String = ""
     var result: String = ""
     
-    var delegate: CalcDelegate?
+    var delegate: CalcViewController!
     
     func addToBuffer(_ token: String) {
         
@@ -54,5 +55,11 @@ class Calc {
     func evaluate() {
         result = buffer
         delegate?.updateResult()
+    }
+
+    func next() {
+        if !buffer.isEmpty {
+            delegate?.next()
+        }
     }
 }
