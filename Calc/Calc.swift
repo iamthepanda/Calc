@@ -16,13 +16,14 @@ protocol CalcDelegate {
 class Calc {
     static let calc = Calc()
     
-    var buffer: String = "0"
+    var buffer: String = ""
+    var result: String = ""
     
     var delegate: CalcDelegate?
     
     func addToBuffer(_ token: String) {
         
-        if buffer == "0" {
+        if buffer == "" {
             buffer = ""
         }
         
@@ -33,8 +34,9 @@ class Calc {
     }
     
     func clearBuffer() {
-        if buffer != "0" {
-            buffer = "0"
+        if buffer != "" {
+            buffer = ""
+            result = ""
         }
         
         delegate?.updateExpression()
@@ -50,6 +52,7 @@ class Calc {
     }
     
     func evaluate() {
+        result = buffer
         delegate?.updateResult()
     }
 }

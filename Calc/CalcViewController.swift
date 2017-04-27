@@ -28,7 +28,8 @@ class CalcViewController: UIViewController {
         calc.delegate = self
         pageControl.addTarget(self, action: #selector(CalcViewController.didChangePageControlValue), for: .valueChanged)
         
-        expression.text = "0"
+        expression.text = ""
+        evaluatedTerm.text = ""
         
     }
     
@@ -74,7 +75,7 @@ extension CalcViewController: CalcDelegate {
     }
     
     func updateResult() {
-        evaluatedTerm.text = calc.buffer
+        evaluatedTerm.text = calc.result
     }
     
 }
