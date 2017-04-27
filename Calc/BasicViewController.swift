@@ -14,6 +14,7 @@ class BasicViewController: UIViewController {
     @IBAction func backspace(_ sender: UIButton) {
     }
     @IBAction func enter(_ sender: UIButton) {
+//        Calc.calc.hello()
     }
     @IBAction func multiply(_ sender: UIButton) {
     }

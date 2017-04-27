@@ -533,9 +533,6 @@
                             <constraint firstItem="Rzh-1o-dFc" firstAttribute="width" secondItem="ca2-AP-h3P" secondAttribute="width" id="zyQ-6c-6Wi"/>
                         </constraints>
                     </view>
-                    <connections>
-                        <outlet property="modulo" destination="ca2-AP-h3P" id="0Ov-N9-cRt"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w2h-Fa-uS1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

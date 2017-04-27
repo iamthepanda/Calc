@@ -15,6 +15,7 @@
 		5E5A52B21EB00D420027C5A6 /* CalcPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A52B11EB00D420027C5A6 /* CalcPageViewController.swift */; };
 		5EC320351EB1882100B8F0A2 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320341EB1882100B8F0A2 /* BasicViewController.swift */; };
 		5EC320371EB1888500B8F0A2 /* ExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */; };
+		5EC320391EB190DA00B8F0A2 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320381EB190DA00B8F0A2 /* Calc.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5E5A52B11EB00D420027C5A6 /* CalcPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalcPageViewController.swift; sourceTree = "<group>"; };
 		5EC320341EB1882100B8F0A2 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraViewController.swift; sourceTree = "<group>"; };
+		5EC320381EB190DA00B8F0A2 /* Calc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				5E0C93451EAEDB250045FCB7 /* AppDelegate.swift */,
+				5EC320381EB190DA00B8F0A2 /* Calc.swift */,
 				5E0C93471EAEDB250045FCB7 /* CalcViewController.swift */,
 				5E5A52B11EB00D420027C5A6 /* CalcPageViewController.swift */,
 				5E0C93491EAEDB250045FCB7 /* Main.storyboard */,
@@ -150,6 +153,7 @@
 				5EC320351EB1882100B8F0A2 /* BasicViewController.swift in Sources */,
 				5E0C93481EAEDB250045FCB7 /* CalcViewController.swift in Sources */,
 				5EC320371EB1888500B8F0A2 /* ExtraViewController.swift in Sources */,
+				5EC320391EB190DA00B8F0A2 /* Calc.swift in Sources */,
 				5E0C93461EAEDB250045FCB7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

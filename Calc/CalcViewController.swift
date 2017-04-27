@@ -14,6 +14,8 @@ class CalcViewController: UIViewController {
     @IBOutlet weak var calculationsView: UIStackView!
     
     
+    let calc = Calc.calc
+    
     var calcPageViewController: CalcPageViewController? {
         didSet {
             calcPageViewController?.calcDelegate = self
@@ -24,6 +26,7 @@ class CalcViewController: UIViewController {
         super.viewDidLoad()
         
         pageControl.addTarget(self, action: #selector(CalcViewController.didChangePageControlValue), for: .valueChanged)
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
