@@ -160,6 +160,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="calculationsView" destination="oK2-6h-eCX" id="4Re-uP-vYd"/>
                         <outlet property="containerView" destination="euY-35-45M" id="1yk-Aa-KsR"/>
                         <outlet property="pageControl" destination="bih-af-4BX" id="T6D-gm-5E4"/>
                     </connections>

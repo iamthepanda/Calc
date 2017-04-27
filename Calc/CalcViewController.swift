@@ -11,6 +11,7 @@ import UIKit
 class CalcViewController: UIViewController {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var containerView: UIView!
+    @IBOutlet weak var calculationsView: UIStackView!
     
     
     var calcPageViewController: CalcPageViewController? {

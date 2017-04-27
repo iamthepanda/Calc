@@ -10,8 +10,8 @@ class CalcPageViewController: UIPageViewController {
     
     fileprivate(set) lazy var orderedViewControllers: [UIViewController] = {
         return [
-            self.newColoredViewController("Basic"),
-            self.newColoredViewController("Extra")]
+            self.newButtonViewController("Basic"),
+            self.newButtonViewController("Extra")]
     }()
     
     override func viewDidLoad() {
@@ -45,9 +45,9 @@ class CalcPageViewController: UIPageViewController {
         }
     }
     
-    fileprivate func newColoredViewController(_ color: String) -> UIViewController {
+    fileprivate func newButtonViewController(_ type: String) -> UIViewController {
         return UIStoryboard(name: "Main", bundle: nil) .
-            instantiateViewController(withIdentifier: "\(color)ViewController")
+            instantiateViewController(withIdentifier: "\(type)ViewController")
     }
     
     fileprivate func scrollToViewController(_ viewController: UIViewController,
