@@ -19,17 +19,16 @@ class Calc {
     
     var buffer: String = ""
     var result: String = ""
+
+    var tokenStream: TokenStream = []
+    let parser = Parser()
     
     var delegate: CalcViewController!
     
     func addToBuffer(_ token: String) {
-        
-        if buffer == "" {
-            buffer = ""
-        }
-        
         if buffer.characters.count <= 16 {
             buffer += token
+            tokenStream.append(Token.TString(token))
             delegate?.updateExpression()
         }
     }
@@ -38,6 +37,7 @@ class Calc {
         if buffer != "" {
             buffer = ""
             result = ""
+            tokenStream.removeAll()
         }
         
         delegate?.updateExpression()
@@ -47,12 +47,24 @@ class Calc {
     func deleteLastToken() {
         if !buffer.isEmpty {
             buffer = buffer.substring(to: buffer.index(before: buffer.endIndex))
+            tokenStream.removeLast()
         }
         
         delegate?.updateExpression()
     }
     
     func evaluate() {
+
+        do {
+            try print(parser.parse(TokenStream([Token.TString("5")])))
+        } catch Lexer.LexerError.NextTokenUnparsable {
+            print("next token unparsable")
+        } catch ParseError.Error("") {
+            print("parse error")
+        } catch let error {
+            print(error.localizedDescription)
+        }
+        
         result = buffer
         delegate?.updateResult()
     }
@@ -62,4 +74,5 @@ class Calc {
             delegate?.next()
         }
     }
+
 }

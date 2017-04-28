@@ -16,6 +16,8 @@
 		5EC320351EB1882100B8F0A2 /* BasicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320341EB1882100B8F0A2 /* BasicViewController.swift */; };
 		5EC320371EB1888500B8F0A2 /* ExtraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */; };
 		5EC320391EB190DA00B8F0A2 /* Calc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EC320381EB190DA00B8F0A2 /* Calc.swift */; };
+		B58693EA323558C9152C9654 /* Lexer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B58691F6E8E8DA1B6C43531B /* Lexer.swift */; };
+		B5869FD14928BB38DBD72E4B /* Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B586962C196C8B3439357363 /* Parser.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		5EC320341EB1882100B8F0A2 /* BasicViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicViewController.swift; sourceTree = "<group>"; };
 		5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtraViewController.swift; sourceTree = "<group>"; };
 		5EC320381EB190DA00B8F0A2 /* Calc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calc.swift; sourceTree = "<group>"; };
+		B58691F6E8E8DA1B6C43531B /* Lexer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Lexer.swift; sourceTree = "<group>"; };
+		B586962C196C8B3439357363 /* Parser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 				5E0C93511EAEDB250045FCB7 /* Info.plist */,
 				5EC320341EB1882100B8F0A2 /* BasicViewController.swift */,
 				5EC320361EB1888500B8F0A2 /* ExtraViewController.swift */,
+				B586962C196C8B3439357363 /* Parser.swift */,
+				B58691F6E8E8DA1B6C43531B /* Lexer.swift */,
 			);
 			path = Calc;
 			sourceTree = "<group>";
@@ -155,6 +161,8 @@
 				5EC320371EB1888500B8F0A2 /* ExtraViewController.swift in Sources */,
 				5EC320391EB190DA00B8F0A2 /* Calc.swift in Sources */,
 				5E0C93461EAEDB250045FCB7 /* AppDelegate.swift in Sources */,
+				B5869FD14928BB38DBD72E4B /* Parser.swift in Sources */,
+				B58693EA323558C9152C9654 /* Lexer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
