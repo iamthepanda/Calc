@@ -23,7 +23,7 @@ class Calc {
     var tokenStream: TokenStream = []
     let parser = Parser()
     
-    var delegate: CalcViewController!
+    var delegate: CalcDelegate!
     
     func addToBuffer(_ token: String) {
         if buffer.characters.count <= 16 {
@@ -64,7 +64,7 @@ class Calc {
         } catch let error {
             print(error.localizedDescription)
         }
-        
+
         result = buffer
         delegate?.updateResult()
     }
